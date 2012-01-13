@@ -1,14 +1,15 @@
-	#source 'http://rubygems.org'
-
+	source 'http://rubygems.org'
 	gem 'ZenTest'
 	gem 'spork'
-	 
 	gem 'rails', '3.0.1'
-	gem 'sqlite3-ruby', '1.3.2',  :require => 'sqlite3'
-	 
+
+	source :gemcutter
+	gem 'sinatra', '1.0'
+	gem 'rake'
+
 	group :development do
-	#gem 'rspec-rails', '2.2.1'
 	gem 'rspec-rails'
+	gem 'sqlite3-ruby', '1.3.2',  :require => 'sqlite3'
 	end
 	
 	group :test do
