@@ -6,11 +6,12 @@
 
  group :development do
     gem 'rspec-rails', '2.0.0.beta.18'
- end
+ 	gem 'autotest-growl'
+end
 
  group :test do
     gem 'rspec'
-   gem 'spork'
+   gem 'spork','0.9.0.rc8'
  end
 
 
